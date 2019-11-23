@@ -175,7 +175,7 @@ void redessiner(int *cases, int *copyCases, SDL_Surface *ecran){
 	SDL_FreeSurface(carre);
 }
 
-int random(){
+int random_fill(){
 	int a;
 
 	a = rand() % 101;
@@ -192,7 +192,7 @@ int random(){
 
 	if(a == PROBABILITE){
 
-		a = random();
+		a = random_fill();
 	}
 
 	return a;
@@ -210,7 +210,7 @@ int main(int argc, char *argv[]){
 	int i,j;
 
 	SDL_Surface *ecran = NULL;
-	
+
 	SDL_Init(SDL_INIT_VIDEO);
 	ecran = SDL_SetVideoMode(TAILLEGRAPH * TAILLECASE,TAILLEGRAPH * TAILLECASE,32,SDL_HWSURFACE | SDL_DOUBLEBUF);
 	SDL_WM_SetCaption("Jeu De La Vie", NULL);
@@ -223,7 +223,7 @@ int main(int argc, char *argv[]){
 
 		for(j = 0; j < (TAILLEGRAPH * TAILLECASE); j += TAILLECASE){
 
-			cases[ ((i / TAILLECASE) + (j / TAILLECASE) + ((i / TAILLECASE) * (TAILLEGRAPH - 1))) ] = random();
+			cases[ ((i / TAILLECASE) + (j / TAILLECASE) + ((i / TAILLECASE) * (TAILLEGRAPH - 1))) ] = random_fill();
 		}
 	}
 
