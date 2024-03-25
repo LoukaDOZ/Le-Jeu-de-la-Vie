@@ -1,6 +1,6 @@
 # Le jeu de la vie / Conway's game of life
 
-![Capture d’écran du 2024-03-15 18-22-43](https://github.com/LoukaDOZ/Le-Jeu-de-la-Vie/assets/46566140/44a41248-3561-498d-965d-8d45407573fe)
+![Capture d’écran du 2024-03-25 16-09-37](https://github.com/LoukaDOZ/Le-Jeu-de-la-Vie/assets/46566140/c812abf2-a168-4ff0-8a4e-492816a56140)
 
 ## Usage
 
